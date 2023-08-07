@@ -1,0 +1,13 @@
+.home-title{
+     color: #FCD78E;
+     font-weight: 300;
+     margin: 1rem;
+     margin-left: 3rem;
+     font-size: 24px;
+}
+
+.tool-container{
+     display: flex;
+     flex-direction: column;
+}
+

@@ -6,15 +6,15 @@ function AddToolForm(){
           <form className="add-tool-form">
                <div>
                     <div>
-                         <label>Product Name</label>
+                         <label>AI Tool Name</label>
                          <input type="text" />
                     </div>
                     <div>
-                         <label>Product Description</label>
+                         <label>AI Tool Description</label>
                          <textarea rows="8"></textarea>
                     </div>
                     <div>
-                         <label>URL</label>
+                         <label>AI Tool URL</label>
                          <input type="text" />
                     </div>
                </div>

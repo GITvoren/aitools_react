@@ -1,0 +1,29 @@
+.nav-tabs{
+     padding: 1rem 0;
+     display: flex;
+     gap: 1rem;
+     justify-content: center;
+}
+
+.nav-tabs>li{
+     text-decoration: none;
+     list-style-type: none;
+     width: 100px;
+     text-align: center;
+     color: #cacacabe;
+     transition: 0.125s
+
+}
+
+.nav-tabs>li:hover{
+     color: #ffffff;
+     cursor: pointer;
+}
+
+.nav-tabs>li.active{
+     color: #ffffff;
+     border-bottom: 2px solid #FCD78E;
+     padding-bottom: 5px;
+     transform: scale(1.1);
+     transition: 0.125s;
+}
