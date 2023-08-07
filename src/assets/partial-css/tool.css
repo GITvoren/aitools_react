@@ -43,10 +43,30 @@
 
 .tool-container>p{  
     width: 300px;
+    height: 100px;
     text-align: justify;
     font-size: 14px;
     font-weight: 300;
+    overflow-y: scroll;
+    padding-left: 8px;
+    padding-right: 14px;
     
+}
+
+.tool-container>p::-webkit-scrollbar {
+     width: 3px;
+     radius: 100px;
+}
+    
+.tool-container>p::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+     border-radius: 100px;
+}
+    
+.tool-container>p::-webkit-scrollbar-thumb {
+     background-color: #ffe3aada;
+     outline: 1px solid rgba(54, 56, 58, 0.39);
+     border-radius: 10px;
 }
 
 @media(max-width: 830px){
@@ -79,6 +99,7 @@
      .tool-container>p{  
           min-height: 100px;
           width: auto;
+          padding: 0 1rem;
           
       }
      

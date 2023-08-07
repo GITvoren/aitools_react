@@ -15,7 +15,7 @@ function Tool({props}){
      return(
           <div className="tool-container">
                <h3>{name}</h3>
-                    <p>{description.length > 155 ? description.slice(0, 150).concat(' ...') : description} </p>
+                    <p>{description} </p>
                <button onClick={() => openInNewTab(url)}>Check App</button>
           </div>
      );
