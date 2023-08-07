@@ -55,8 +55,13 @@
  
      }
 
+     .list-container{
+          gap: 4rem;
+     }
+
      .home-title{
           text-align: center;
+          font-size: 20px;
      }
 
      .tool-container{

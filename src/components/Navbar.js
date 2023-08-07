@@ -5,7 +5,7 @@ import navbar from '../assets/partial-css/navbar.css';
 function Navbar(){
      return(
           <div className="navbar">
-               <Link>
+               <Link to="/">
                     <div className="logo-container">
                          <img 
                          src="/images/aistash.png"
@@ -14,7 +14,7 @@ function Navbar(){
                     </div>
                </Link>  
                <div>
-                    <Link>About</Link>
+                    <Link to="/about">About</Link>
                </div>
           </div>
      )
