@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
+import Navbar from './components/Navbar.js';
+import AddToolForm from './components/AddToolForm.js';
+
 
 
 function App() {
 
   const [ tools, setTools ] = useState([])
 
-  useEffect(() => {
+/*   useEffect(() => {
 
     fetch(`${process.env.REACT_APP_API_URL}/tools`)
     .then(result => result.json())
@@ -13,17 +16,16 @@ function App() {
       setTools(data)
     })
 
-  }, [])
+  }, []) */
 
 
 
   return (
     <div className="App">
-      {tools.map(tool => {
-        return(
-          <div key={tool._id}>{tool.name}</div>
-        )
-      })}
+        <Navbar />
+        <div className="container">
+          <AddToolForm />
+        </div>
     </div>
   );
 }
