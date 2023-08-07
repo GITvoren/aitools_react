@@ -44,8 +44,10 @@ button{
 
 button:hover{
      border: 0;
+     color: #ffffff;
      transform: scale(1.2);
      transition: 0.15s;
+     text-shadow: 0 0 30px #edb844, 0 0 30px #edb844, 0 0 30px #edb844;
 }
 
 label{
