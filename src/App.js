@@ -16,15 +16,16 @@ function App() {
     setToggleActive(tabNumber);
 }
 
-/*   useEffect(() => {
+  useEffect(() => {
 
     fetch(`${process.env.REACT_APP_API_URL}/tools`)
     .then(result => result.json())
     .then(data => {
       setTools(data)
     })
+    .catch(() => alert('Fetch Error'))
 
-  }, []) */
+  }, [])
 
 
 
@@ -48,9 +49,10 @@ function App() {
             <div>
               <h1 className="home-title">AI Productivity Tools</h1>
               <div className="list-container">
-                  <Tool />
-                  <Tool />
-                  <Tool />
+                {
+                  tools.map(tool => <Tool key= {tool._id} props= {tool}  />)
+                }
+                  
               </div>
             </div>
             :

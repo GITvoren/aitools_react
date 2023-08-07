@@ -26,15 +26,55 @@
      overflow: hidden;
 }
 
+.tool-container>h3{
+     color: #ffe4aee3;
+     font-family: 'Shadows Into Light', cursive;
+     font-size: 22px;
+     letter-spacing: 2px;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     width: 150px;
+}
+
 .tool-container>button{
      margin: 0;
 }
 
 
 .tool-container>p{  
-    max-width: 300px;
+    width: 300px;
     text-align: justify;
     font-size: 14px;
     font-weight: 300;
     
+}
+
+@media(max-width: 830px){
+     .container{
+          margin: 3rem;
+ 
+     }
+
+     .home-title{
+          text-align: center;
+     }
+
+     .tool-container{
+          flex-direction: column;
+          height: auto;
+          gap: 2rem;
+          border-left: 0px;
+          border-top: 5px solid #FCD78E;
+     }
+
+      .tool-container>h3{
+          text-align: center;
+     }
+
+     .tool-container>p{  
+          min-height: 100px;
+          width: auto;
+          
+      }
+     
 }

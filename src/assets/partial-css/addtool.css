@@ -59,7 +59,7 @@ input{
      width: 100%;
      height: 28px;
      border-radius: 4px;
-     padding-left: 4px;
+     padding-left: 6px;
      border: 0;
 }
 
@@ -74,4 +74,12 @@ textarea{
      padding-left: 4px;
      padding-top: 4px;
      border-radius: 4px;
+}
+
+
+@media(max-width: 745px){
+     .add-tool-form{
+          flex-direction: column;
+          align-items: center;
+     }
 }

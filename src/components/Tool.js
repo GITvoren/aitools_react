@@ -1,15 +1,22 @@
 import tool from '../assets/partial-css/tool.css';
 
 
-const string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum expedita, blanditiis laboriosam quibusdam corporis placeat doloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum expedita, blanditiis laboriosam quibusdam corporis placeat doloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum expedita, blanditiis laboriosam quibusdam corporis placeat doloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum expedita, blanditiis laboriosam quibusdam corporis placeat doloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribusoloribus  placeat doloribus'
 
 
-function Tool(){
+function Tool({props}){
+
+     const {_id, name, description, url } = props
+     
+     const openInNewTab = url => {
+          window.open(url, '_blank', 'noopener,noreferrer');
+        };
+
+
      return(
           <div className="tool-container">
-               <h3>Heytitle</h3>
-                    <p>{string.length > 155 ? string.slice(0, 150).concat(' ...') : string} </p>
-               <button>Visit Link</button>
+               <h3>{name}</h3>
+                    <p>{description.length > 155 ? description.slice(0, 150).concat(' ...') : description} </p>
+               <button onClick={() => openInNewTab(url)}>Check App</button>
           </div>
      );
 }
