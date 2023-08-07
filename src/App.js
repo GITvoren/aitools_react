@@ -47,7 +47,7 @@ function App() {
             toggleActive == 1 ?
             <div>
               <h1 className="home-title">AI Productivity Tools</h1>
-              <div className="tool-container">
+              <div className="list-container">
                   <Tool />
                   <Tool />
                   <Tool />

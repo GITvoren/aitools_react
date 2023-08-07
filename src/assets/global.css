@@ -24,9 +24,9 @@ body{
      backdrop-filter: blur(2px);
      background-color: rgba(0, 0, 30, 0.4);
      min-height: 100vh;
-     margin: auto;
-     margin-top: 3rem;
+     margin: 3rem auto;
      border-radius: 8px;
-     box-shadow: 0px 0px 4px #fcd78e7e;;
+     box-shadow: 0px 0px 4px #fcd78e7e;
+     padding: 0 2rem;
 }
 

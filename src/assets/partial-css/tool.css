@@ -1,13 +1,40 @@
 .home-title{
      color: #FCD78E;
      font-weight: 300;
-     margin: 1rem;
-     margin-left: 3rem;
+     margin: 2rem 0;
+     margin-left: 1rem;
      font-size: 24px;
 }
 
-.tool-container{
+.list-container{
      display: flex;
      flex-direction: column;
+     gap: 2rem;
 }
 
+.tool-container{
+     width: 100%;
+     margin: 0 auto;
+     padding: 1rem 0;
+     height: 150px;
+     box-shadow: 0px 0px 4px rgba(105, 104, 104, 0.63);
+     border-left: 5px solid #FCD78E;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     color: #f0f0f0;
+     overflow: hidden;
+}
+
+.tool-container>button{
+     margin: 0;
+}
+
+
+.tool-container>p{  
+    max-width: 300px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+    
+}
