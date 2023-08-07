@@ -16,7 +16,7 @@ function Tool({props}){
           <div className="tool-container">
                <h3>{name}</h3>
                     <p>{description} </p>
-               <button onClick={() => openInNewTab(url)}>Check App</button>
+               <button onClick={() => openInNewTab(url)}>Check Tool</button>
           </div>
      );
 }
