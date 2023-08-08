@@ -16,10 +16,10 @@ function App() {
     <div className="App">
         <Navbar />
         <div className="container">
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
         </div>
     </div>
   );

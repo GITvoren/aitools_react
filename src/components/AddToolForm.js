@@ -3,12 +3,14 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
+
 function AddToolForm(){
 
      const [name, setName] = useState("");
      const [description, setDescription] = useState("");
      const [url, setUrl] = useState("");
-     const navigate = useNavigate();
+
+
 
      const handleSubmit = async (e) => {
           e.preventDefault();
@@ -27,6 +29,7 @@ function AddToolForm(){
 
                const data = await result.json();
                if(result.ok){
+
                     alert(data.msg);
                     window.location.reload(true);
                }else{
