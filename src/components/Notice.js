@@ -2,7 +2,7 @@ import notice from '../assets/partial-css/notice.css';
 
 
 function Notice({setShow}){
-     console.log(setShow)
+     
      return(
           <div className="notice">
                <div>
