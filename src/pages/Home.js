@@ -49,7 +49,7 @@ function Home(){
                toggleActive == 1 ?
                <div>
                     <div className="relative">
-                      <h1 className="home-title">Outstanding AI Tools</h1>
+                      <h1 className="home-title">Top AI Tools</h1>
                       {show && <Notice setShow={setShow} />}
                     </div>
                     <div className="list-container">
