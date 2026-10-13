@@ -13,7 +13,7 @@ function Home(){
      const [ tools, setTools ] = useState([]);
      const [ toggleActive, setToggleActive ] = useState(1);
      const [ isLoading, setIsLoading ] = useState(true);
-     const [ show, setShow ] = useState(true);
+     const [ show, setShow ] = useState(false);
 
 
    
